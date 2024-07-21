@@ -1,0 +1,51 @@
+li{
+    list-style-type: none;
+    width: 400px;
+    border: 1px solid black;
+    float: left;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: rgb(204, 232, 244);
+    border-radius: 7px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+li {
+    margin-bottom: 10px;
+}
+
+ul button{
+    display: block;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 18px;
+}
+.add{
+    background-color: green;
+    border: none;
+    padding: 5px;
+    color: white;
+    width: 50px;
+    border-radius: 9px;
+}
+.inpb{
+    margin-left: 20px;
+    width: 300px;
+    padding: 5px;
+}
+.tsk{
+   background-color: rgb(19, 113, 164);
+    width: 590px;
+    border: solid 1px;
+    margin:10% 25% ;
+    padding-bottom: 10px;
+    height: fit-content;
+}
+button:hover{
+    cursor: pointer;
+}

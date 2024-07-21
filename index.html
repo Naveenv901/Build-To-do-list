@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+      <div class="tsk">
+        <h1>Todo list</h1>
+        <input type="text" name="inpt" id="inp" class="inpb" placeholder="Enter a task">
+        <button onclick="add()" class="add">Add</button>
+        <ul class="uli" id="ulist"></ul>
+      </div>
+    
+    
+       <script>
+        function add() {
+       const inp = document.getElementById("inp");
+       if(inp.value.length>0 &&inp.value.length<=54){
+       const ul = document.getElementById("ulist");
+       var li = document.createElement("li");
+       li.textContent=inp.value;
+       
+       inp.value="";
+       var del =document.createElement("button");
+       del.textContent="delete";
+       del.onclick = function() {
+        ul.removeChild(li);
+        ul.removeChild(del);
+       };
+       
+       ul.appendChild(li);
+       ul.appendChild(del);
+        }
+        else if(inp.value.length>54){
+          alert("There should not be more than 60 charcters")
+        }
+        else{
+        alert("Task cannot be empty");
+      }
+      }
+      
+       </script>
+
+    
+</body>
+
+
+
+
+</html>
